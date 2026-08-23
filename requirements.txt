@@ -1,0 +1,13 @@
+# Core scoring engine has zero third-party dependencies by design —
+# it runs anywhere Python 3.10+ runs, no network or compiled deps needed.
+
+# Dev/test only:
+pytest>=7.4
+
+# Uncomment when you wire up a live API data source (live_api_source.py):
+# requests>=2.31
+
+# Web MVP
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-dotenv>=1.0
